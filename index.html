@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MM Display Chennai - Catalog</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF2F5;--card:#fff;--ink:#14213D;--mute:#5B6778;--line:#D5DCE4;--acc:#0B5D7A;--acc-ink:#fff;--wa:#1B8F4B;--field:#F8FAFB;--warn:#B3261E;--hero:#14213D;--hero-ink:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D1420;--card:#16202F;--ink:#E8EEF5;--mute:#93A0B2;--line:#2A3749;--acc:#4FB3D6;--acc-ink:#04202B;--wa:#3DBE72;--field:#0F1826;--warn:#FF8A80;--hero:#16202F;--hero-ink:#E8EEF5}}
+:root[data-theme="dark"]{--bg:#0D1420;--card:#16202F;--ink:#E8EEF5;--mute:#93A0B2;--line:#2A3749;--acc:#4FB3D6;--acc-ink:#04202B;--wa:#3DBE72;--field:#0F1826;--warn:#FF8A80;--hero:#16202F;--hero-ink:#E8EEF5}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 "Noto Sans Devanagari",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:640px;margin:0 auto;padding:12px 14px 96px}
+.hero{background:var(--hero);color:var(--hero-ink);border-radius:14px;padding:20px 18px;margin-bottom:12px}
+.hero h1{margin:0;font-size:28px;font-weight:800;line-height:1.2}
+.hero p{margin:6px 0 0;opacity:.85;font-size:14px}
+.hero .cta{display:grid;grid-template-columns:2fr 1fr;gap:8px;margin-top:16px}
+button,.btn{font:600 15px/1 "Noto Sans Devanagari",system-ui,sans-serif;border:0;border-radius:8px;padding:13px 14px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.wa{background:var(--wa);color:#fff}
+.call{background:transparent;color:inherit;border:1.5px solid currentColor}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;margin-bottom:10px}
+.chip{white-space:nowrap;background:var(--card);color:var(--ink);border:1px solid var(--line);padding:9px 14px;font-size:14px;border-radius:20px;font-weight:400}
+.chip[aria-pressed="true"]{background:var(--acc);color:var(--acc-ink);border-color:var(--acc)}
+.item{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:10px;overflow:hidden}
+.item h3{margin:0;padding:12px 14px 2px;font-size:17px;font-weight:600}
+.item .note{padding:0 14px 8px;color:var(--mute);font-size:13px}
+.v{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 14px;border-top:1px solid var(--line)}
+.v b{font-weight:600}
+.pr{font-weight:800;font-size:17px;white-space:nowrap}
+.pr small{font-weight:400;color:var(--mute);font-size:12px}
+.v .btn{padding:9px 12px;font-size:13px;flex:0 0 auto}
+.foot{color:var(--mute);font-size:12.5px;text-align:center;margin:14px 0}
+.fab{position:fixed;left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:linear-gradient(transparent,var(--bg) 40%)}
+.fab .btn{width:100%;max-width:640px;margin:0 auto;display:flex;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.adm{background:var(--card);border:1px dashed var(--acc);border-radius:10px;padding:10px 12px;margin-bottom:12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:13px}
+.adm span{flex:1 1 100%;color:var(--mute)}
+.adm button{flex:1;padding:11px 8px;font-size:14px}
+.pri{background:var(--acc);color:var(--acc-ink)}
+.sec{background:var(--field);color:var(--ink);border:1px solid var(--line)}
+label{display:block;font-size:12.5px;color:var(--mute);margin:6px 0 2px}
+input{width:100%;font:inherit;color:var(--ink);background:var(--field);border:1px solid var(--line);border-radius:6px;padding:8px 10px}
+input:focus,button:focus-visible,a:focus-visible{outline:2px solid var(--acc);outline-offset:1px}
+.ed{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;margin-bottom:10px}
+.r3{display:grid;grid-template-columns:2fr 1.2fr 1fr auto;gap:6px;align-items:end;margin-top:6px}
+.rm{background:none;color:var(--warn);padding:8px;font-weight:400;font-size:13px}
+.add{width:100%;background:transparent;border:1.5px dashed var(--acc);color:var(--acc);margin-top:8px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:80px;background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:20px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s;text-align:center;max-width:90%}
+.toast.on{opacity:1}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+<div class="hero dyn" id="hero"></div>
+<div class="chips dyn" id="chips"></div>
+<div class="dyn" id="list"></div>
+<p class="foot dyn" id="foot"></p>
+</main>
+<div class="fab dyn" id="fab"></div>
+<div class="toast" id="toast" role="status"></div>
+<script id="seed" type="application/json">{"shop":{"name":"MM Display","city":"Chennai","phone":"9003072703","tag":"रोलअप स्टैंडी · LED फ़्रेम · कैनोपी टेंट · अम्ब्रेला"},"items":[
+{"name":"रोलअप स्टैंडी","cat":"स्टैंडी / फ़्रेम","note":"","vars":[{"l":"3 x 6 ft","p":900,"u":""}]},
+{"name":"अल्ट्रा स्लिम LED फ़्रेम","cat":"स्टैंडी / फ़्रेम","note":"","vars":[{"l":"A1","p":4000,"u":""},{"l":"A2","p":3000,"u":""},{"l":"A3","p":2000,"u":""},{"l":"A4","p":1000,"u":""}]},
+{"name":"लॉलीपॉप स्टैंड","cat":"स्टैंडी / फ़्रेम","note":"","vars":[{"l":"2 x 2 ft","p":2200,"u":""},{"l":"1.5 x 1.5 ft","p":1800,"u":""}]},
+{"name":"कैनोपी टेंट","cat":"टेंट","note":"","vars":[{"l":"6 x 6 ft","p":4000,"u":""},{"l":"4 x 4 ft","p":3500,"u":""}]},
+{"name":"गज़ीबो टेंट","cat":"टेंट","note":"","vars":[{"l":"10 x 10 ft","p":5000,"u":""}]},
+{"name":"अम्ब्रेला","cat":"अम्ब्रेला / बोर्ड","note":"","vars":[{"l":"रेगुलर साइज़","p":1200,"u":""},{"l":"बिग साइज़","p":1500,"u":""}]},
+{"name":"फैब्रिक बोर्ड","cat":"अम्ब्रेला / बोर्ड","note":"","vars":[{"l":"प्रति स्क्वायर फ़ीट","p":650,"u":"sq ft"}]},
+{"name":"ब्रोशर स्टैंड","cat":"टेबल / स्टैंड","note":"","vars":[{"l":"स्टैंडर्ड","p":2000,"u":""}]},
+{"name":"प्रमोशन टेबल","cat":"टेबल / स्टैंड","note":"","vars":[{"l":"स्टैंडर्ड","p":2500,"u":""}]}
+],"t":0}</script>
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const clone=o=>JSON.parse(JSON.stringify(o));
+const inr=v=>"₹"+Number(v).toLocaleString("en-IN");
+let seed={shop:{},items:[]};try{seed=JSON.parse($("seed").textContent)}catch(e){}
+let D=clone(seed),OWNER=false,EDIT=false,cat="";
+
+function toast(t,ms){const e=$("toast");e.textContent=t;e.classList.add("on");setTimeout(()=>e.classList.remove("on"),ms||2000)}
+function wa(txt){let p=String(D.shop.phone||"").replace(/\D/g,"");if(p.length===10)p="91"+p;return`https://wa.me/${p}?text=`+encodeURIComponent(txt)}
+function draft(){if(OWNER)try{localStorage.setItem("mm-draft",JSON.stringify(D))}catch(e){}}
+
+function renderView(){
+ const s=D.shop,cats=[...new Set(D.items.map(i=>i.cat).filter(Boolean))];
+ $("hero").innerHTML=`<h1>${esc(s.name)}</h1><p>${esc(s.city)}${s.tag?" · "+esc(s.tag):""}</p><div class="cta"><a class="btn wa" target="_blank" rel="noopener" href="${wa("नमस्ते "+s.name+", मुझे आपके डिस्प्ले प्रोडक्ट्स के बारे में जानकारी चाहिए।")}">WhatsApp पर पूछो</a><a class="btn call" href="tel:+91${String(s.phone).replace(/\D/g,"").slice(-10)}">कॉल</a></div>`;
+ $("chips").innerHTML=[""].concat(cats).map(c=>`<button class="chip" type="button" data-cat="${esc(c)}" aria-pressed="${cat===c}">${c?esc(c):"सब"}</button>`).join("");
+ $("list").innerHTML=D.items.filter(i=>!cat||i.cat===cat).map(i=>`<div class="item"><h3>${esc(i.name)}</h3>${i.note?`<div class="note">${esc(i.note)}</div>`:'<div style="height:8px"></div>'}${i.vars.map(v=>`<div class="v"><b>${esc(v.l)}</b><span class="pr">${v.p?inr(v.p)+(v.u?` <small>/ ${esc(v.u)}</small>`:""):'<small>रेट पूछें</small>'}</span><a class="btn wa" target="_blank" rel="noopener" href="${wa(`नमस्ते ${s.name}, मुझे ये चाहिए:\n${i.name} - ${v.l}${v.p?" ("+inr(v.p)+(v.u?"/"+v.u:"")+")":""}\nसंख्या: `)}">पूछो</a></div>`).join("")}</div>`).join("")||`<p class="foot">कोई आइटम नहीं है।</p>`;
+ $("foot").textContent="रेट बदल सकते हैं। ऑर्डर से पहले WhatsApp पर कन्फ़र्म कर लें।";
+ $("fab").innerHTML=`<a class="btn wa" target="_blank" rel="noopener" href="${wa("नमस्ते "+s.name+", मुझे कोटेशन चाहिए।")}">कोटेशन के लिए WhatsApp करो</a>`;
+}
+function renderEdit(){
+ const s=D.shop;
+ $("hero").innerHTML=`<h1>एडिट मोड</h1><p>बदलाव के बाद ऊपर "पेज अपडेट करो" दबाओ।</p>`;
+ $("chips").innerHTML="";$("fab").innerHTML="";$("foot").textContent="";
+ $("list").innerHTML=`<div class="ed"><label>दुकान का नाम</label><input data-e="s.name" value="${esc(s.name)}"><label>शहर</label><input data-e="s.city" value="${esc(s.city)}"><label>WhatsApp नंबर</label><input data-e="s.phone" inputmode="tel" value="${esc(s.phone)}"><label>टैगलाइन</label><input data-e="s.tag" value="${esc(s.tag)}"></div>`
+ +D.items.map((i,a)=>`<div class="ed"><label>आइटम का नाम</label><input data-e="i.${a}.name" value="${esc(i.name)}"><div class="r3" style="grid-template-columns:1fr 1fr"><div><label>कैटेगरी</label><input data-e="i.${a}.cat" value="${esc(i.cat)}"></div><div><label>नोट (वैकल्पिक)</label><input data-e="i.${a}.note" value="${esc(i.note)}"></div></div>
+ ${i.vars.map((v,b)=>`<div class="r3"><div><label>साइज़ / टाइप</label><input data-e="v.${a}.${b}.l" value="${esc(v.l)}"></div><div><label>रेट (₹)</label><input data-e="v.${a}.${b}.p" inputmode="numeric" value="${esc(v.p||"")}"></div><div><label>यूनिट</label><input data-e="v.${a}.${b}.u" value="${esc(v.u)}"></div><button class="rm" type="button" data-rv="${a}.${b}">×</button></div>`).join("")}
+ <button class="add" type="button" data-av="${a}">+ साइज़ / टाइप जोड़ो</button><button class="rm" type="button" data-ri="${a}" style="margin-top:6px">इस आइटम को हटाओ</button></div>`).join("")
+ +`<button class="add" type="button" id="ai">+ नया आइटम</button>`;
+}
+function render(){
+ const a=$("adm");if(a&&OWNER)a.innerHTML=`<span>आप एडमिन हैं (यह पट्टी ग्राहक को नहीं दिखती)</span><button class="sec" type="button" id="tg">${EDIT?"देखो":"एडिट करो"}</button><button class="pri" type="button" id="pub">पेज अपडेट करो</button>`;
+ if(EDIT)renderEdit();else renderView();
+}
+async function publish(){
+ let a=null;try{a=await claude.use("artifact")}catch(e){}
+ if(!a){toast("यहाँ से पेज अपडेट नहीं हो सकता");return}
+ D.items.forEach(i=>{i.vars=i.vars.filter(v=>String(v.l).trim()||v.p)});
+ D.items=D.items.filter(i=>String(i.name).trim()&&i.vars.length);
+ const c=document.documentElement.cloneNode(true);
+ c.querySelectorAll(".dyn").forEach(e=>{e.innerHTML=""});
+ const t=c.querySelector("#toast");t.className="toast";t.textContent="";
+ c.querySelector("title").textContent=D.shop.name+" "+D.shop.city;
+ c.querySelector("#seed").textContent=JSON.stringify({shop:D.shop,items:D.items,t:Date.now()}).replace(/</g,"\\u003c");
+ toast("अपडेट हो रहा है...");$("pub").disabled=true;
+ try{await a.publish("<!DOCTYPE html>\n"+c.outerHTML);try{localStorage.removeItem("mm-draft")}catch(e){}toast("पेज अपडेट हो गया")}
+ catch(e){const m={not_writer:"आप यह पेज अपडेट नहीं कर सकते",too_large:"पेज बहुत बड़ा हो गया",rate_limited:"थोड़ी देर बाद फिर कोशिश करो"};if(!e||e.code!=="conflict")toast(m[e&&e.code]||"अपडेट नहीं हो पाया, फिर कोशिश करो",3000)}
+ const b=$("pub");if(b)b.disabled=false;
+}
+document.addEventListener("click",e=>{const t=e.target,d=t.dataset||{};
+ if(d.cat!==undefined&&t.classList.contains("chip")){cat=d.cat;renderView();}
+ if(t.id==="tg"){EDIT=!EDIT;render();window.scrollTo(0,0)}
+ if(t.id==="pub")publish();
+ if(t.id==="ai"){D.items.push({name:"",cat:"",note:"",vars:[{l:"",p:"",u:""}]});draft();render();}
+ if(d.av!==undefined){D.items[+d.av].vars.push({l:"",p:"",u:""});draft();render();}
+ if(d.rv){const[a,b]=d.rv.split(".").map(Number);D.items[a].vars.splice(b,1);draft();render();}
+ if(d.ri!==undefined){D.items.splice(+d.ri,1);draft();render();}});
+document.addEventListener("input",e=>{const t=e.target,k=t.dataset&&t.dataset.e;if(!k)return;
+ const p=k.split(".");
+ if(p[0]==="s")D.shop[p[1]]=t.value;
+ if(p[0]==="i")D.items[+p[1]][p[2]]=t.value;
+ if(p[0]==="v"){const v=D.items[+p[1]].vars[+p[2]];v[p[3]]=p[3]==="p"?(parseFloat(String(t.value).replace(/[^\d.]/g,""))||0):t.value}
+ draft();});
+render();
+</script>
+</body>
+</html>
